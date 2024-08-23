@@ -11,7 +11,19 @@ pageInfo:
 
 # Optional app settings and configuration
 appConfig:
-  theme: colorful
+  theme: colorful                 # 初始默认的主题名称
+  layout: auto                    # 主页布局，默认auto
+  iconSize: medium
+  language: cn                    # 默认 en
+  auth:
+    users:
+      - user: ttinge               # 改为用户名
+        hash: 908755b20a098f3df87f353ccc894d5b3f324bafdf6042666bb98f57c5145033  # SHA256 哈希加密，去生成一个
+        type: admin               # 管理员权限  
+      - user: hk              # 配置完后就用这个账户访问
+        hash: a320480f534776bddb5cdb54b1e93d210a3c7d199e80a23c1b2178497b184c76
+        type: normal              # 普通用户
+           # 未经身份验证的用户有只读访问的仪表板
 
 # Main content - An array of sections, each containing an array of items
 sections:
